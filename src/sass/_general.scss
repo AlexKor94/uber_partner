@@ -592,6 +592,7 @@ footer {
 }
 
 .overlay {
+  z-index: 7;
   display: none;
   position: fixed;
   width: 100%;
@@ -603,15 +604,10 @@ footer {
     display: block;
     animation: fadeIn 3s;
   }
-
-  // &_hide {
-  //   display: none;
-  //   animation: fadeOut 3s;
-  // }
 }
 
 .modal {
-  z-index: 7;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 50%;
