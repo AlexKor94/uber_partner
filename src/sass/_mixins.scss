@@ -2,3 +2,23 @@
   background-image: none;
   background-color: $main_color;
 }
+
+@mixin fadeIn {
+      from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+}
+
+@mixin fadeOut {
+from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
