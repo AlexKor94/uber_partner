@@ -27,18 +27,22 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  overlay.addEventListener('click', (e) => {
+    if (e.target.className == 'modal__close' || e.target.className == 'overlay overlay_show') {
+      overlay.classList.remove('overlay_show')
+    }
+  });
+
   modal_close.addEventListener('click', () => {
     overlay.classList.toggle('overlay_show');
   });
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const url = 'send.php';
+    const url = 'send.php'; //change url name
     const formData = new FormData(form);
     const json = JSON.stringify(Object.fromEntries(formData.entries()));
-    console.log(json);
     let res = postData(url, formData);
-    console.log(res);
   });
 });
 

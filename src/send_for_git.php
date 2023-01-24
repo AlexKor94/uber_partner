@@ -1,4 +1,5 @@
   <?php
+  //CHANGE NAME THIS FILE INTO TO "send" OR CHANGE "script.js"
   $token = "YOUR_TOKEN";
   $chat_id = 'YOUR_ID_CHAT_WITH_MINUS_WITHOUT_QUOTES';
 
